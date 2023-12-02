@@ -1,44 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>康文昌的在线HTML 教学小工具</title>
-    <style>  
-      body {
-        margin: 0;
-      }
-    </style>
-  </head>
-  <body>
-    <div style="
-    backgroumd-color:#f1f1f1;
-    text-align:center;
-    pdivadding:40px
-    ">
-      <img src="https://z1.ax1x.com/2023/11/24/piw3acj.png" alt="超" width="120px" height="120px">
-    </div>
-    <div style="
-      max-width:700px;
-      margin:30 auto;
-      padding:15px;
-      line-height:1.7;
-    ">
-      <p>大家好</p>
-      <p>我是编程学习者</p>
-      <p>这是我的第一个网站</p>
-      <p>也是我第一次学习写网站</p>
-      <p>感谢你的观看，我会持续完善</p>
-    </div>
-    <div style="
-    backgroumd-color:#f1f1f1;
-    text-align:center;
-    pdivadding:40px
-    ">
-    <p>
-      我的网站
-    </p>
-    <a href="http://www.baidu.com">百度</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张超的个人主页</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100%;
+            background-color: #eeee;
+            }
+            .flex{
+                display: flex;
+            }
+            *{
+                /* border: 1px solid #b1aea0; */
+            }
+            .baise {
+                background-color: white;
+            }
+            .column{
+                flex-direction: column;
+            }
+            .flex1{
+                flex:1;
+            }
+            .row{
+                flex-direction: row;
+            }
+            .hjj{
+                line-height: 1.2;
+            }
+            @media (max-width:600px){
+            .zongneirong{
+                flex-direction: column;
+            }
+            }
 
+    </style>
+</head>
+<body class="flex column">
+    <!-- LOGO栏 -->
+    <div style="height: 100px;" class="baise flex">
+        <div style="
+         padding: 1px;
+         margin: auto;"
+         class="flex">
+            <img src="https://z1.ax1x.com/2023/11/24/piw3acj.png" alt="LOGO"
+         height="80px" width="80px">
+        </div>       
     </div>
+    <!-- 主内容区 -->
+    <div style="text-align: center;" class="flex column baise">
+        <div>
+            <b>这是我的第一个网站</b>
+        </div>
+        <!-- zongneirong -->
+        <div class="flex zongneirong">
+            <!-- wenziqu -->
+            <div style="letter-spacing: 1px; margin: 1px; padding: 1px;" class="flex1 hjj">
+                <p>这里我想放一些文字 </p>
+                <p>用来介绍我自己 </p>
+                <p>但是我还没想好写一些什么东西</p>
+                <p style="color: blue;">反正随便写一些吧</p>
+                <p style="font-size: 20px; color: rgb(189, 24, 24);">等慢慢再往里面添加</p>
+                <p style="color: blanchedalmond;">你能看到这里我很佩服你的耐心</p>
+                <p>以后会一点点根据学到的东西慢慢</p>
+                <p>让他丰富起来</p>
+                <p>估计会很漫长</p>
+                <p>我也不知道多久</p>
+                <p>因为我学东西很笨</p>
+                <p>非常感谢</p>
+            </div>
+            <!-- tupian -->
+            <div class="flex1">
+                <p>这里我想放一些图片</p>
+                <p>用来展示我自己</p>
+                <img src="https://z1.ax1x.com/2023/12/01/pisV57T.jpg" alt="wajueji" height="200" width="200">
+                <img src="https://z1.ax1x.com/2023/12/01/pisV21s.jpg" alt="jisuanji" height="200" width="200">
+
+            </div>
+        </div> 
+    </div>
+    <div style="height: 200px; text-align: center;">
+        <div>
+            <p>这是网页底部</p>
+            <p>可能会配置备案号友情链接什么的</p>
+        </div>
+    </div>
+    
+</body>
 </html>
