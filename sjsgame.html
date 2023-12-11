@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猜数字游戏</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        width: 50%;
+        max-width: 800px;
+        min-width: 480px;
+        /* 设置上下外边距0 左右自动 */
+        margin: 0 auto;
+      }
+      .juzhong {
+        text-align: center;
+      }
+      .form input[type="number"] {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body class="juzhong">
+    <h1>这是一个猜数字小游戏</h1>
+    <p>点击开始游戏系统会生成一个1-100之间的随机数</p>
+    <p>你有十次猜测的机会,每次系统会提示你猜大了或者小了</p>
+    <p>如果十次没猜中则游戏失败</p>
+    <br />
+    <input type="button" value="开始游戏" class="kaishi" />
+    <div class="form">
+      <label for="shurukuang">请输入数字</label>
+      <input
+        type="number"
+        min="1"
+        max="100"
+        required
+        id="shurukuang"
+        class="shurukuang"
+        disabled
+      />
+      <input type="submit" value="提交猜测" class="tijiao" disabled />
+    </div>
+    <div class="jieguo">
+      <p class="caiguodeshu"></p>
+      <p class="tishi"></p>
+      <p class="gaohuodi"></p>
+    </div>
+    <script>
+      const shurukuang = document.querySelector(".shurukuang");
+      const kaishi = document.querySelector(".kaishi");
+      const tijiao = document.querySelector(".tijiao");
+      const caiguodeshu = document.querySelector(".caiguodeshu");
+      const tishi = document.querySelector(".tishi");
+      const gaohuodi = document.querySelector(".gaohuodi");
+      let suijishu = Math.floor(Math.random() * 100) + 1;
+
+      let cishu = 1;
+      function kaishiyouxi() {
+        shurukuang.disabled = false;
+        tijiao.disabled = false;
+        kaishi.parentNode.removeChild(kaishi);
+        shurukuang.focus();
+      }
+      kaishi.addEventListener("click", kaishiyouxi);
+      tijiao.addEventListener("click", yhcc);
+      function yhcc() {
+        const userGuess = Number(shurukuang.value);
+
+        if (cishu === 1) {
+          caiguodeshu.textContent = "之前猜过的:";
+        }
+        caiguodeshu.textContent += userGuess + " ";
+
+        if (userGuess === suijishu) {
+          tishi.textContent = "你太厉害了,恭喜你猜中了";
+          tishi.style.backgroundColor = "Green";
+          gameover();
+        } else if (cishu === 10) {
+          tishi.textContent = "GAME OVER";
+          gaohuodi.textContent = "";
+          gameover();
+        } else if (userGuess > suijishu) {
+          tishi.textContent = "你猜错了";
+          tishi.style.backgroundColor = "red";
+          gaohuodi.textContent = "数字大了";
+        } else {
+          tishi.textContent = "你猜错了";
+          tishi.style.backgroundColor = "red";
+          gaohuodi.textContent = "数字小了";
+        }
+        cishu++;
+        shurukuang.value = "";
+        shurukuang.focus();
+      }
+      function gameover() {
+        shurukuang.disabled = true;
+        tijiao.disabled = true;
+        resetButton = document.createElement("button");
+        resetButton.textContent = "开始新游戏";
+        document.body.appendChild(resetButton);
+        resetButton.addEventListener("click", resetgame);
+      }
+      function resetgame() {
+        const jieguos = document.querySelectorAll(".jieguo p");
+        for (const jieguo of jieguos) {
+          jieguo.textContent = "";
+        }
+        cishu = 1;
+        resetButton.parentNode.removeChild(resetButton);
+        shurukuang.disabled = false;
+        tijiao.disabled = false;
+        shurukuang.value = "";
+        shurukuang.focus();
+        suijishu = Math.floor(Math.random() * 100) + 1;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+/* 身体桑设置外边距0,高度全屏,背景颜色灰色 */
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #eeee;
+}
+/* 设置全局边框1PX,颜色黑色 */
+/* * {
+  border: 1px solid black;
+} */
+/* 定义一个弹性盒子类 */
+.flex {
+  display: flex;
+}
+/* 定义一个纵向排列类 */
+.column {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid rgba(90, 192, 7, 0.514);
+  width: 80px;
+  height: 80px;
+}
+.centers {
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: sans-serif;
+  color: black;
+  letter-spacing: 5px;
+}
+.red1 {
+  background-color: rgb(177, 67, 67);
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+.topnav {
+  background-color: rgb(38, 151, 81);
+}
+a {
+  color: #11076e;
+}
+.flex1 {
+  flex: 1;
+}
+.t-senters {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .neirong {
+    flex-direction: column;
+  }
+  .daohang {
+    display: none;
+  }
+}
