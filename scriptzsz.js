@@ -44,7 +44,7 @@ holdbtn.addEventListener("click", function () {
     // 在页面上显示出来
     document.querySelector(`#score--${activeplayer}`).textContent =
       scores[activeplayer];
-    if (scores[activeplayer] >= 20) {
+    if (scores[activeplayer] >= 100) {
       document
         .querySelector(`.player--${activeplayer}`)
         .classList.add(`player--winner`);
