@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-image: url(980.jpg);
+  /* 背景全屏 */
+  background-size: cover;
+}
+.inputs {
+  position: absolute;
+  right: 200px;
+  top: 140px;
+}
+.buttons {
+  position: absolute;
+  right: 200px;
+  top: 220px;
+}
+.centers {
+  text-align: center;
+}
+.dianhaode {
+  position: absolute;
+  left: 200px;
+  top: 150px;
+}
+p {
+  color: white;
+  font-size: 30px;
+}
+h1 {
+  color: white;
+}
+label {
+  font-size: 30px;
+}
+.input1 {
+  height: 30px;
+}
+.hidden {
+  display: none;
+}
+img {
+  width: 200px;
+}
