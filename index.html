@@ -71,6 +71,14 @@
     <div class="t-senters">
       <p>感谢关注我的网站</p>
       <p>我将持续更新</p>
+       <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("sw.js");
+        });
+      }
+    
+    </script>
     </div>
   </body>
 </html>
