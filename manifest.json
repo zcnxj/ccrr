@@ -3,7 +3,7 @@
 	"name": "超超学习主页",
 	"lang": "zh-CN",
 	"description": "欢迎来到超超学习主页",
-	"start_url": "/",
+	"start_url": "https://zcnxj.github.io/ccrr",
 	"background_color": "#00AAE7",
 	"theme_color": "#00AAE7",
 	"dir": "auto",
