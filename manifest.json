@@ -12,67 +12,67 @@
 	"orientation": "any",
 	"icons": [
 		{
-			"src": "ccrr/android-icon-192x192-seochecker-manifest-2824.ico",
+			"src": "/android-icon-192x192-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "192x192"
 		},
 		{
-			"src": "ccrr/apple-icon-180x180-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-180x180-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "180x180"
 		},
 		{
-			"src": "ccrr/apple-icon-152x152-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-152x152-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "152x152"
 		},
 		{
-			"src": "ccrr/apple-icon-144x144-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-144x144-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "144x144"
 		},
 		{
-			"src": "ccrr/apple-icon-120x120-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-120x120-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "120x120"
 		},
 		{
-			"src": "ccrr/apple-icon-114x114-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-114x114-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "114x114"
 		},
 		{
-			"src": "ccrr/favicon-96x96-seochecker-manifest-2824.ico",
+			"src": "/favicon-96x96-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "96x96"
 		},
 		{
-			"src": "ccrr/apple-icon-76x76-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-76x76-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "76x76"
 		},
 		{
-			"src": "ccrr/apple-icon-72x72-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-72x72-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "72x72"
 		},
 		{
-			"src": "ccrr/apple-icon-60x60-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-60x60-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "60x60"
 		},
 		{
-			"src": "ccrr/apple-icon-57x57-seochecker-manifest-2824.ico",
+			"src": "/apple-icon-57x57-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "57x57"
 		},
 		{
-			"src": "ccrr/favicon-32x32-seochecker-manifest-2824.ico",
+			"src": "/favicon-32x32-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "32x32"
 		},
 		{
-			"src": "ccrr/favicon-16x16-seochecker-manifest-2824.ico",
+			"src": "/favicon-16x16-seochecker-manifest-2824.ico",
 			"type": "image/png",
 			"sizes": "16x16"
 		}
