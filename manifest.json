@@ -1,12 +1,12 @@
 {
 	"short_name": "超超",
 	"name": "超超学习主页",
-	"lang": "zh-Hans",
+	"lang": "zh-CN",
 	"description": "欢迎来到超超学习主页",
-	"start_url": "https://zcnxj.github.io/ccrr/",
+	"start_url": "/",
 	"background_color": "#00AAE7",
 	"theme_color": "#00AAE7",
-	"dir": "ltr",
+	"dir": "auto",
 	"display": "standalone",
 	"orientation": "any",
 	"icons": [
