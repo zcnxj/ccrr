@@ -30,7 +30,7 @@ workbox.setConfig({
 workbox.skipWaiting();
 workbox.clientsClaim();
 
-var cacheList = ['/', '/index.html'];
+var cacheList = ['/ccrr', '/index.html'];
 
 workbox.routing.registerRoute(
   new RegExp(/\.(?:html|css)$/),
